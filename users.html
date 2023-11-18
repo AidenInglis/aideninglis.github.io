@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+        <!--SEO optimisation tags-->
+        <meta name="description" content="Aiden Inglis's portfolio showcasing web development projects and skills.">
+        <meta name="keywords" content="web development, portfolio, projects, skills, Aiden Inglis">
+        <meta name="author" content="Aiden Inglis">
+        <title>register/login</title>
+        <script type="module" src="firebase.js"></script>
+</head>
+<body>
+    <div id="main">
+        <!--open button to open the sidebar navigation-->
+        <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+    </div>
+    <div id="mySidebar" class="sidebar">
+        <div class="closebtndiv">
+            <!--close button for the sidebar-->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+        </div>
+        <a href="home.html">Home</a>
+        <a href="project.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <a class="active" href="users.html">login/register</a>
+        <form id="search-box">
+            <input type="text" placeholder="Search.." name="search">
+        </form>
+
+    </div>
+        <!--this is the navbar for larger screen-->
+        <nav id="navbar">
+            <a href="home.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="users.html">login/register</a>
+            <div id="navbar-right">
+                <form id="search-box-nav">
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+        </nav>
+    <div class="form-div">
+        <form id="register-form" class="add">
+            <h1>Register Here</h1>
+            <div id="input-selection1">
+                <label for="register-email">E-mail</label><br>
+                <input id="register-email" type="email" name="email" placeholder="Your e-mail" autocomplete="email" required><br><br><br>
+            </div>
+            <div id="input-selection2">
+                <label for="register-password">Password</label><br>
+                <input id="register-password" type="password" name="password" placeholder="Type Message Here" autocomplete="new-password" required><br><br><br><br>
+            </div>
+            <button id="register-button" type="submit" name="submit">Register</button>
+        </form>
+
+        <form id="login-form" class="add">
+            <h1>Login Here</h1 >
+            <div id="input-selection3">
+                <label for="login-email">E-mail</label><br>
+                <input id="login-email" type="email" name="email" placeholder="Your e-mail" autocomplete="email" required><br><br><br>
+            </div>
+            <div id="input-selection4">
+                <label for="login-password">Password</label><br>
+                <input id="login-password" type="password" name="password" placeholder="Type Message Here" autocomplete="current-password" required><br><br><br><br>
+            </div>
+            <button id="login-button" type="submit" name="submit">Login</button>
+        </form>
+    </div>
+    <form id="hidden-form" style="display: none;">
+        <!-- Add your form fields and elements here -->
+        <input type="text" name="example-field" style="display: none;">
+        <button type="submit" style="display: none;">Submit</button>
+      </form>
+
+
+    <button id="logout-button">Log Out</button>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>

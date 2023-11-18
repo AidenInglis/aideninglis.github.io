@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+        <title>Aiden's Portfolio</title>
+        <!--SEO optimisation tags-->
+        <meta name="description" content="Aiden Inglis's portfolio showcasing web development projects and skills.">
+        <meta name="keywords" content="web development, portfolio, projects, skills, Aiden Inglis">
+        <meta name="author" content="Aiden Inglis">
+    </head>
+
+    <body>
+        <div id="main">
+            <!--open button to open the sidebar navigation-->
+            <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+        </div>
+        <!--this is the navbar for a smaller screen-->
+        <div id="mySidebar" class="sidebar">
+            <div class="closebtndiv">
+                <!--close button for the sidebar-->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            </div>
+
+            <a href="home.html">Home</a>
+            <a class="active" href="project.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+            <a href="users.html">login/register</a>
+            <form id="search-box">
+                <input type="text" placeholder="Search.." name="search">
+            </form>
+        </div>
+        <!--this is the navbar for larger screen-->
+        <nav id="navbar">
+            <a href="home.html">Home</a>
+            <a class="active" href="project.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+            <a href="users.html">login/register</a>
+
+            <div id="navbar-right">
+                <form id="search-box-nav">
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+        </nav><!-- above is all navbars, do not touch, will break -->
+        <!-- projects text and experience lists and titles with images-->
+        <h1 id="projects-h1">My Projects and Experiences</h1>
+            <p id="project_p"><br>Projects: <br><br>Website for Milnes Beatson - <br>This was a project for Motueka high school lvl 3 credits in which I had to make a fully responsive website for an organisation. This involved the use of three programming languages which are JavaScript, HTML and CSS.<br><br></p>
+            <div id="Milnes_photo"><img src="images/Milnes_Beatson_preview.png" alt="Milnes Beatson Website"></div><br><br>
+            <p id="project_p1">Website for Sunergy (fake company) - <br>This was also a high school project which was worth 4 lvl 3 credits in which I had to make a responsive website for a made up company using HTML, CSS and JavaScript. <div id="Milnes_photo"><img src="images/Sunergy_preview.png" alt="Sunergy Website"></div><p id="project_p"><br><br>I completed these project when I was 17 years old and in the last term of my Final year of high school.</p>
+            
+        <p id="project_p2"><br><br>Work Experience: <br><br>Work for A B Woods (3 months) - <br>During my after my final year of high school i was given the opportunity to work at A B Woods in which i was able to gain valuable experience in apple production from tree to market. This involved pruning, thinning and picking the apple trees.<br><br><br>
+            Work for Tyrella Orchards (2.5 months) - <br><br> During my time at Tyrella Orchards i was able to gain more experience in apple production and was able to learn the process of automated apple grading using a machine and photo database comparison. In this job i was grading apples, packing them in boxes, and stacking boxes.<br><br><br><br></p>
+        
+        <!--footer-->
+        <footer>
+            <p>Aiden Inglis's Portfolio</p>
+            <p>developed by Aiden Inglis</p>
+        </footer>
+        <script src="portfolio.js"></script>
+    </body>
+</html>

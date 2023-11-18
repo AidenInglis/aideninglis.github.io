@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+        <title>Aiden's Portfolio</title>
+        <!--SEO optimisation tags-->
+        <meta name="description" content="Aiden Inglis's portfolio showcasing web development projects and skills.">
+        <meta name="keywords" content="web development, portfolio, projects, skills, Aiden Inglis">
+        <meta name="author" content="Aiden Inglis">
+    </head>
+
+    <body>
+        <div id="main">
+            <!--open button to open the sidebar navigation-->
+            <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+        </div>
+        <!--this is the navbar for a smaller screen-->
+        <div id="mySidebar" class="sidebar">
+            <div class="closebtndiv">
+                <!--close button for the sidebar-->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            </div>
+
+            <a href="home.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a class="active" href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+            <a href="users.html">login/register</a>
+            <form id="search-box">
+                <input type="text" placeholder="Search.." name="search">
+            </form>
+        </div>
+        <!--this is the navbar for larger screen-->
+        <nav id="navbar">
+            <a href="home.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a class="active" href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+            <a href="users.html">login/register</a>
+            
+            <div id="navbar-right">
+                <form id="search-box-nav">
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+        </nav><!-- above is all navbars, do not touch, will break -->
+        <div class="skills-border">
+        <h1 id="skills-h1">My Skills</h1>
+        <p id="skills-p"><br>Below are some of the skills I have learned and developed before and at NMIT.<br><br><br><br> I have a certification in HTML/CSS from Freecodecamp which shows that i can proficiently practice HTML/CSS.</p>
+        <div class="skills-div">
+            <img src="images/HTMLCSS_certification.png" alt="HTML/CSS Certificate">
+        </div>
+        <!--listing all my skills from nmit and outside nmit-->
+        <h1 class="skills-p"><br><br><br><br>Below is a list of skills I have learned and developed at NMIT.</h1>
+        <ul>
+        <li class="skills-li">How to use Figma, a fidelity wireframe software.<br><br></li>
+        <li class="skills-li">How to build a computer using just components - this consists of knowledge of safety practices when working on electrical hardware.<br><br></li>
+        <li class="skills-li">How to Use Hyper V Virtual machine software and how to have many different operating systems on the computer at once.<br><br></li> 
+        <li class="skills-li">How to code JavaScript and write functions that make a Patient healthcare management system using the command line in visual studio.</li>
+        </ul>
+        <h1 class="skills-p"><br><br><br><br>Below is a list of skills I have learned and developed before NMIT.</h1>
+        <ul>
+        <li class="skills-li">How to code in Python using an imported easy gui.<br><br></li>
+        <li class="skills-li">How to code in HTML and CSS.<br><br></li>
+        <li class="skills-li">Leadership roles in Scouts as head pack leader of the richmond scout group.<br><br></li>
+        <li class="skills-li">Medical training which consists of sling practices, bandaging and wrapping and CPR.<br><br></li>
+        <li class="skills-li">Wilderness survival Skills, water filtration, safe river crossing, makeshift shelters and compass orientation.<br><br></li>
+        <li class="skills-li">Skills like tactics and methods in rugby with 13 years of experience of games and trainings.<br><br></li>
+        <li class="skills-li">Proficient in using excel spreadsheets as i did a paper on researching every aspect of the software.<br><br><br><br><br></li>
+        </ul>
+        </div>
+        <!--this is the navbar for larger screen-->
+        <footer>
+            <p>Aiden Inglis's Portfolio</p>
+            <p>developed by Aiden Inglis</p>
+        </footer>
+        <script src="portfolio.js"></script>
+    </body>
+</html>

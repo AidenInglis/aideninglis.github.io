@@ -1,7 +1,83 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+        <title>Aiden's Portfolio</title>
+        <!--SEO optimisation tags-->
+        <meta name="description" content="Aiden Inglis's portfolio showcasing web development projects and skills.">
+        <meta name="keywords" content="web development, portfolio, projects, skills, Aiden Inglis">
+        <meta name="author" content="Aiden Inglis">
+    </head>
+
+    <body>
+        <div id="main">
+            <!--open button to open the sidebar navigation-->
+            <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+        </div>
+        <!--this is the navbar for a smaller screen-->
+        <div id="mySidebar" class="sidebar">
+            <div class="closebtndiv">
+                <!--close button for the sidebar-->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            </div>
+            <a class="active" href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+            <a href="users.html">login/register</a>
+            <form id="search-box">
+                <input type="text" placeholder="Search.." name="search">
+            </form>
+        </div>
+            <!--this is the navbar for larger screen-->
+            <nav id="navbar">
+                <a class="active" href="home.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="contact.html">Contact</a>
+                <a href="users.html">login/register</a>
+                <div id="navbar-right">
+                    <form id="search-box-nav">
+                        <input type="text" placeholder="Search.." name="search">
+                    </form>
+                </div>
+            </nav><!-- above is all navbars, do not touch, will break -->
+        <!--Welcome section, this displays the portfolio image and I Am aiden inglis text-->
+        <div id="welcome-section">
+            <h1><br><br>I AM AIDEN INGLIS</h1>
+            <div id="profile">
+                <img src="images/Profile_photo.jpg" alt="Aiden Inglis">
+            </div>
+        </div>
+        <!--this is the main text for the home page-->
+        <p id="intro-text">Hi my name is Aiden Inglis and I'm 18 years old. I'm a student enrolled at NMIT studying a bachelor of information technology. My goals are to become a developer and one day start my own tech company.<br><br>
+        </p><p id="intro-text1">My Special interests are Rugby, Computers and Coding<br><br></p>
+        <div class="rugby_div"><img id="rugby_photo" src="images/Rugby_photo.jpg" alt="Rugby"></div>
+        <ul class="page1">
+            <li class="rugby-text">
+                Rugby is a sport i've played for 13 years and i have played for 4 different clubs and have been in two representive teams for Buller, and Nelson. <br>I play the position of Hooker and have played that position for most of my rugby career. 
+                <br>My current grade in rugby is the senior B, Division 2 for the Huia Rugby Club.<br><br><br>
+            </li>
+            <li class="computer-div">
+                <img id="computer_photo" src="images/computer_photo.jpg" alt="My personal computer">
+            </li>
+            <li class="computer-text">
+                <br>Comput  ers and Coding: I have been interested in computers for years and have been building my own custom computers since I learned how in 2020. <br><br>I have built 2 computers and have upgraded them all at least once. 
+                <br>I have also been interested in the software side of computers and have been learning how to code since I was 14 using complex coding languages such as JavaScript, Python, HTML and CSS.
+            </li>
+            <li id="intro-text2">I have NCEA Lvl 3 from Motueka High School.<br><br> I have experience coding websites for organisational uses, Receptionist and Orchard Worker which consists of Thinning, picking, pruning and supervising on and off for 4 months.<br><br><br> </li>
+        </ul>
+        <!--this is the footer-->
+        <footer>
+            <p>Aiden Inglis's Portfolio</p>
+            <p>developed by Aiden Inglis</p>
+        </footer>
+        <!--linking javascript file-->
+        <script type="module" src="firebase.js"></script>
+        
+        <script src="portfolio.js"></script>
+    </body>
 </html>

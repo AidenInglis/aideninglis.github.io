@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+        <title>Aiden's Portfolio</title>
+        <!--SEO optimisation tags-->
+        <meta name="description" content="Aiden Inglis's portfolio showcasing web development projects and skills.">
+        <meta name="keywords" content="web development, portfolio, projects, skills, Aiden Inglis">
+        <meta name="author" content="Aiden Inglis">
+        <script type="module" src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/10.5.0/firebase-database.js"></script>
+        <script type="module" src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <!--open button to open the sidebar navigation-->
+            <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+        </div>
+        <!--this is the navbar for a smaller screen-->
+        <div id="mySidebar" class="sidebar">
+            <div class="closebtndiv">
+                <!--close button for the sidebar-->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+            </div>
+
+            <a href="home.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a class="active" href="contact.html">Contact</a>
+            <a href="users.html">login/register</a>
+
+            <form id="search-box">
+                <input type="text" placeholder="Search.." name="search">
+            </form>
+        </div>
+        <!--this is the navbar for larger screen-->
+        <nav id="navbar">
+            <a href="home.html">Home</a>
+            <a href="project.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a class="active" href="contact.html">Contact</a>
+            <a href="users.html">login/register</a>
+
+            <div id="navbar-right">
+                <form id="search-box-nav">
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+        </nav><!-- above is all navbars, do not touch, will break -->
+        <!--Contact form, with Full name, email, message inputs-->
+        <div class="contact-form-div">
+            <h1 id="contact-h1">Contact Me</h1>
+            <p id="contact-p">If you would like to contact me regarding any business queries or questions, please fill out the form below and I will get back to you as soon as possible.</p>
+            <form id="contact-form" class="add">
+                <div id="input-selection1">
+                    <label for="name">Full Name</label><br>
+                    <input id="name" type="text" name="name" placeholder="Full name" autocomplete="name" required><br><br><br>
+                </div>
+                <div id="input-selection2">
+                    <label for="email">E-mail</label><br>
+                    <input id="email" type="email" name="email" placeholder="Your e-mail" required><br><br><br>
+                </div>
+                <div id="input-selection3">
+                    <label for="message">Message</label><br>
+                    <input id="message" type="text" name="message" placeholder="Type Message Here" required><br><br><br><br>
+                </div>
+                <button id="submit-button" type="submit" name="submit">Send</button>
+            </form>
+        </div>
+        <!--Social links, linkedin, github, youtube-->
+        <div class="social-links">
+            <div id="linkedin">
+                <a href="https://www.linkedin.com/in/aiden-inglis-512b67267/" target="_blank" class="fa-brands fa-linkedin" style="color: #004dd1;"></a>
+            </div>
+            <div id="github">
+                <a href="https://github.com/AidenInglis" target="_blank" class="fa-brands fa-github" style="color: #004fd6;"></a>
+            </div>
+            <div id="youtube">
+                <a href="https://www.youtube.com/channel/UCCOBX7I6v-kvp2eHWH8YLLA" target="_blank" class="fa-brands fa-youtube" style="color: #ff0000;"></a>
+            </div>
+        </div>
+        <div id="comment-section">
+            <h2>Comment Section</h2>
+            <form id="comment-form">
+                <label for="comment-message">Message:</label>
+                <input type="text" id="comment-message" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="edit-comment-form" style="display: none;">
+                <form id="edit-comment-form-inner">
+                  <input id="edit-comment-input" placeholder="Edit Your Comment">
+                  <button type="submit" class="edit-comment-form">Save Changes</button>
+                </form>
+              </div>
+            <div id="comments-list"></div>
+        </div>
+        <!--footer-->
+        <footer>
+            <p>Aiden Inglis's Portfolio</p>
+            <p>developed by Aiden Inglis</p>
+        </footer>
+        <!-- <script type="module" src="auth.js"></script> -->
+        <script type="module" src="firebase.js"></script>
+        <script src="portfolio.js"></script>
+    </body>
+</html>
